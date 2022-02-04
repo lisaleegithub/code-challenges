@@ -65,3 +65,4 @@ function MinutesSinceMidnight() {
   }
   
   MinutesSinceMidnight();
+// See my comments in the Pull Request
