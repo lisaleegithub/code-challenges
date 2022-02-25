@@ -6,6 +6,10 @@ app.get('/', function (req, res) {
     res.sendFile( __dirname + "/" + "index.html" );
  })
 
+app.get('/about', function (req, res) {
+    res.sendFile( __dirname + "/" + "about.html" );
+});
+
 var server = app.listen(8080, function () {
 var host = server.address().address
 var port = server.address().port
