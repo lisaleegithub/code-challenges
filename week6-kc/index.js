@@ -10,6 +10,10 @@ app.get('/about', function (req, res) {
     res.sendFile( __dirname + "/" + "about.html" );
 });
 
+app.get('/contactme', function (req, res) {
+    res.sendFile( __dirname + "/" + "contactme.html" );
+});
+
 var server = app.listen(8080, function () {
 var host = server.address().address
 var port = server.address().port
