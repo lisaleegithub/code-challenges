@@ -14,6 +14,10 @@ app.get('/contactme', function (req, res) {
     res.sendFile( __dirname + "/" + "contactme.html" );
 });
 
+app.get('*', function (req, res) {
+    res.sendFile( __dirname + "/" + "404.html" );
+});
+
 var server = app.listen(8080, function () {
 var host = server.address().address
 var port = server.address().port
